@@ -235,5 +235,17 @@ public class Dwelling implements Building {   //Класс жилого здан
         return flats;
     }
 
+    public String toString (){
+        StringBuffer buf = new StringBuffer();
+        buf.append("Dwelling (");
+        buf.append(getCountFloors());
+        for (int i = 0; i < getCountFloors(); i++) {
+            buf.append(", ");
+            buf.append(arrFloors[i].toString());
+        }
+        buf.append(")");
+        return buf.toString();
+    }
+
 
 }

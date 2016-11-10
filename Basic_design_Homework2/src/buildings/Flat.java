@@ -87,4 +87,14 @@ public class Flat implements Space {     //Класс квартира
         return buf.toString();
     }
 
+    /*boolean equals(Object object){
+        if(object instanceof Flat){
+            if((((Flat) object).getArea()==this.getArea())&&(((Flat) object).getCountRooms()==this.getCountRooms())){
+                return true;
+            }
+            else
+        }
+        return
+    }*/
+
 }

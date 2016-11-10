@@ -299,6 +299,18 @@ public class OfficeBuilding implements Building {
         return office;
     }
 
+    public String toString () {
+        StringBuffer buf = new StringBuffer();
+        buf.append("OfficeBuilding (");
+        buf.append(getCountFloors());
+        for (int i = 0; i < getCountFloors(); i++) {
+            buf.append(", ");
+            buf.append(gotoNumber(i).toString());
+        }
+        buf.append(")");
+        return buf.toString();
+    }
+
 
 
 
