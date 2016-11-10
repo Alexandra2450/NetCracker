@@ -2,54 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96800605-57c4-451b-9a19-00c132cf946d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/Build.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/Building.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/Buildings.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/Dwelling.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/DwellingFloor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/Flat.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/Floor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/FloorIndexOutOfBoundsException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/InexchangeableFloorsException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/InexchangeableSpacesException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/InvalidRoomsCountException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/InvalidSpaceAreaException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/Office.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/OfficeBuilding$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/OfficeBuilding$Node.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/OfficeBuilding.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/OfficeFloor$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/OfficeFloor$Node.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/OfficeFloor.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/PlacementExchanger.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/Space.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/Basic_design_Homework2/buildings/SpaceIndexOutOfBoundsException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Basic_design_Homework2.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Build.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/Building.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/Buildings.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/Dwelling.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/DwellingFloor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/Flat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/Floor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/FloorIndexOutOfBoundsException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/InexchangeableFloorsException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/InexchangeableSpacesException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/InvalidRoomsCountException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/InvalidSpaceAreaException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/Office.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/OfficeBuilding.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/OfficeFloor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/PlacementExchanger.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/Space.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/buildings/SpaceIndexOutOfBoundsException.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/buildings/Buildings.java" afterPath="$PROJECT_DIR$/src/buildings/Buildings.java" />
     </list>
     <ignored path="Basic_design_Homework2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,8 +65,8 @@
       <file leaf-file-name="Buildings.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/buildings/Buildings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+            <state relative-caret-position="275">
+              <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,8 +139,8 @@
         <option value="$PROJECT_DIR$/src/buildings/DwellingFloor.java" />
         <option value="$PROJECT_DIR$/src/Build.java" />
         <option value="$PROJECT_DIR$/src/buildings/OfficeFloor.java" />
-        <option value="$PROJECT_DIR$/src/buildings/Buildings.java" />
         <option value="$PROJECT_DIR$/src/buildings/Dwelling.java" />
+        <option value="$PROJECT_DIR$/src/buildings/Buildings.java" />
       </list>
     </option>
   </component>
@@ -580,6 +534,14 @@
       <option name="presentableId" value="Default" />
       <updated>1475524477613</updated>
     </task>
+    <task id="LOCAL-00001" summary="Lab 4 ready">
+      <created>1478789738642</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1478789738642</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -660,6 +622,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lab 4 ready" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab 4 ready" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -694,13 +660,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/buildings/DwellingFloor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Build.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -884,6 +843,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="167">
           <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -969,10 +929,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/buildings/Ha.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/buildings/Buildings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+        <state relative-caret-position="275">
+          <caret line="101" column="4" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

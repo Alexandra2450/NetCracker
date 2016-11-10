@@ -98,6 +98,8 @@ public class Buildings {
         out.flush();
     }
 
+
+
     public static Building readBuilding(Scanner in)throws IOException{
         Floor[] result = new Floor[in.nextInt()];
         for(Floor temp : result){
