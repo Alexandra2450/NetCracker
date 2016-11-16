@@ -3,7 +3,7 @@ package buildings;
 
 import java.io.Serializable;
 
-public class OfficeFloor implements Floor {
+public class OfficeFloor implements Floor, java.io.Serializable {
     private class Node implements Serializable{
         Space office = null;
         Node next;
@@ -174,6 +174,35 @@ public class OfficeFloor implements Floor {
         }
         buf.append(")");
         return buf.toString();
+    }
+
+    public boolean equals(Object object) {
+        boolean ans = false;
+        if (object instanceof OfficeFloor) {
+            if (((OfficeFloor) object).countSpace() == this.countSpace()) {
+                for (int i = 0; i < ((OfficeFloor) object).countSpace(); i++) {
+                    if (gotoNumber(i).equals(this.gotoNumber(i))) {
+                        ans = true;
+                    }
+                }
+            }
+        }
+        return ans;
+    }
+
+    public int hashCode() {
+        long temp = Double.doubleToLongBits(countSpace());
+        for (int i = 0; i < countSpace(); i++)
+            temp = temp ^ Double.doubleToLongBits(getSpace(i).hashCode());
+        return (int) temp;
+    }
+
+    public Object clone() {
+        Object[] result = new Space[countSpace()];
+        for (int i = 0; i < countSpace(); i++) {
+            result[i] = getSpace(i).clone();
+        }
+        return new OfficeFloor((Space[]) result);
     }
 
 }

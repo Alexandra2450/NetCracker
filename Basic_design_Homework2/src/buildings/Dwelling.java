@@ -1,6 +1,6 @@
 package buildings;
 
-public class Dwelling implements Building {   //Класс жилого здания
+public class Dwelling implements Building, Cloneable {   //Класс жилого здания
     private Floor[] arrFloors;
 
     public Dwelling (int numberOfFloors, int[] numberOfFlats){    //Конструктор, принимающий количество этажей
@@ -245,6 +245,35 @@ public class Dwelling implements Building {   //Класс жилого здан
         }
         buf.append(")");
         return buf.toString();
+    }
+
+    public boolean equals(Object object) {
+        boolean ans = false;
+        if (object instanceof Dwelling) {
+            if (((Dwelling) object).getCountFloors() == this.getCountFloors()) {
+                for (int i = 0; i < ((Dwelling) object).getCountFloors(); i++) {
+                    if (arrFloors[i].equals(this.arrFloors[i])) {
+                        ans = true;
+                    }
+                }
+            }
+        }
+        return ans;
+    }
+
+    public int hashCode() {
+        long temp = Double.doubleToLongBits(getCountFloors());
+        for (int i = 0; i < getCountFloors(); i++)
+            temp = temp ^ Double.doubleToLongBits(getFloor(i).hashCode());
+        return (int) temp;
+    }
+
+    public Object clone() {
+        Object[] result = new Floor[getCountFloors()];
+        for (int i = 0; i < getCountFloors(); i++) {
+            result[i] = getFloor(i).clone();
+        }
+        return new Dwelling((Floor[]) result);
     }
 
 

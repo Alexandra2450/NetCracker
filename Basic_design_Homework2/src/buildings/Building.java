@@ -18,6 +18,7 @@ public interface Building extends Serializable {
     Space getBestSpace();
     Space[] getArrSortSpace();
     void setFloor(int index, Floor a);
+    Object clone();
 
 
 }

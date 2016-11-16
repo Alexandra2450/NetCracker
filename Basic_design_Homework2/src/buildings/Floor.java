@@ -14,5 +14,6 @@ public interface Floor extends Serializable {
     void addSpace(int index, Space a);
     void deleteSpace(int index);
     Space getBestSpace();
+    Object clone();
 
 }

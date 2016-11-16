@@ -87,14 +87,32 @@ public class Flat implements Space {     //Класс квартира
         return buf.toString();
     }
 
-    /*boolean equals(Object object){
+    public boolean equals(Object object){
+        boolean ans = false;
         if(object instanceof Flat){
             if((((Flat) object).getArea()==this.getArea())&&(((Flat) object).getCountRooms()==this.getCountRooms())){
-                return true;
+                ans = true;
             }
-            else
+        }return ans;
+    }
+
+    public int hashCode() {
+        int result;
+        long temp;
+        long temp2;
+        temp = Double.doubleToLongBits(countRooms);
+        temp2 = Double.doubleToLongBits(getArea());
+        result = (int) (temp ^ temp2);
+        return result;
+    }
+
+    public Object clone(){
+        try{
+            return super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
         }
-        return
-    }*/
+        return null;
+    }
 
 }

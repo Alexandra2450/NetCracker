@@ -7,5 +7,6 @@ public interface Space extends Serializable {
     int getCountRooms();
     void setCountRooms(int a);
     void setArea(double a);
+    Object clone();
 }
 

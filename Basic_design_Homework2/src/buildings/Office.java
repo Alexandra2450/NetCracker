@@ -86,4 +86,32 @@ public class Office implements Space {
         buf.append(")");
         return buf.toString();
     }
+
+    public boolean equals(Object object){
+        boolean ans = false;
+        if(object instanceof Office){
+            if((((Flat) object).getArea()==this.getArea())&&(((Flat) object).getCountRooms()==this.getCountRooms())){
+                ans = true;
+            }
+        }return ans;
+    }
+
+    public int hashCode() {
+        int result;
+        long temp;
+        long temp2;
+        temp = Double.doubleToLongBits(countRooms);
+        temp2 = Double.doubleToLongBits(getArea());
+        result = (int) (temp ^ temp2);
+        return result;
+    }
+
+    public Object clone(){
+        try{
+            return super.clone();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }

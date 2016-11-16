@@ -311,6 +311,35 @@ public class OfficeBuilding implements Building {
         return buf.toString();
     }
 
+    public boolean equals(Object object) {
+        boolean ans = false;
+        if (object instanceof OfficeBuilding) {
+            if (((OfficeBuilding) object).getCountFloors() == this.getCountFloors()) {
+                for (int i = 0; i < ((OfficeBuilding) object).getCountFloors(); i++) {
+                    if (gotoNumber(i).equals(this.gotoNumber(i))) {
+                        ans = true;
+                    }
+                }
+            }
+        }
+        return ans;
+    }
+
+    public int hashCode() {
+        long temp = Double.doubleToLongBits(getCountFloors());
+        for (int i = 0; i < getCountFloors(); i++)
+            temp = temp ^ Double.doubleToLongBits(getFloor(i).hashCode());
+        return (int) temp;
+    }
+
+    public Object clone() {
+        Object[] result = new Floor[getCountFloors()];
+        for (int i = 0; i < getCountFloors(); i++) {
+            result[i] = getFloor(i).clone();
+        }
+        return new OfficeBuilding((Floor[]) result);
+    }
+
 
 
 

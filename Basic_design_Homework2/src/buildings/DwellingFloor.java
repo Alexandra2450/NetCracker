@@ -1,6 +1,6 @@
 package buildings;
 
-public class DwellingFloor implements Floor{   //Класс этаж жилого здания
+public class DwellingFloor implements Floor, java.io.Serializable, Cloneable{   //Класс этаж жилого здания
     private Space[] arrFlats;    //Массив квартир
 
     public DwellingFloor (int numbersOfFlats){     //Конструктор, принимающий количество квартир на этаже
@@ -11,7 +11,7 @@ public class DwellingFloor implements Floor{   //Класс этаж жилог�
 
     }
 
-    public DwellingFloor (Flat[]arrFlats){      //Конструктор, принимающий массив квартир
+    public DwellingFloor (Space[]arrFlats){      //Конструктор, принимающий массив квартир
         int lengthArrFlats = arrFlats.length;
         this.arrFlats = new Flat[lengthArrFlats];
         /*for (int i = 0; i < lengthArrFlats; i++) {
@@ -163,5 +163,35 @@ public class DwellingFloor implements Floor{   //Класс этаж жилог�
         buf.append(")");
         return buf.toString();
     }
+
+    public boolean equals(Object object) {
+        boolean ans = false;
+        if (object instanceof DwellingFloor) {
+            if (((DwellingFloor) object).countSpace() == this.countSpace()) {
+                for (int i = 0; i < ((DwellingFloor) object).countSpace(); i++) {
+                    if (arrFlats[i].equals(this.arrFlats[i])) {
+                        ans = true;
+                    }
+                }
+            }
+        }
+        return ans;
+    }
+
+    public int hashCode() {
+        long temp = Double.doubleToLongBits(countSpace());
+        for (int i = 0; i < countSpace(); i++)
+            temp = temp ^ Double.doubleToLongBits(getSpace(i).hashCode());
+        return (int) temp;
+    }
+
+    public Object clone() {
+        Object[] result = new Space[countSpace()];
+        for (int i = 0; i < countSpace(); i++) {
+            result[i] = getSpace(i).clone();
+        }
+        return new DwellingFloor((Space[]) result);
+    }
+
 
 }
